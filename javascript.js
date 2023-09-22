@@ -1,4 +1,4 @@
-
+import Suma from '/xampp/htdocs/EjerciciosGuia/suma.js';
 /*Ej1
   document.write('octavio duarte')
   document.write('<br>')
@@ -173,6 +173,30 @@ function pintar(objeto, col) {
 
 onLoad
 function mostrarMensaje() {
-			alert('Mensaje');
-		}
+      alert('Mensaje');
+    }
 */
+
+/* Objeto window
+function abrirParametros() {
+  let ventana = open('', '', 'status=yes,width=600,height=300,menubar=yes');
+}
+
+ #propiedad location del objeto window
+function generarAleatorio(){
+  let num;
+  num=Math.random()*3;
+  num=parseInt(num);
+  document.getElementById('numero').value= num;
+  if(num==0){
+    window.location='https://www.outlook.com';
+  }
+  
+  if(num==1){
+    window.location='https://www.gmail.com';
+  }
+  if(num==2){
+    window.location='https://www.yahoo.com';
+  }
+}
+ */

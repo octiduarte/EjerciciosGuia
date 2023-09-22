@@ -149,3 +149,30 @@ function calcular(){
     document.getElementById('importe').value=importe;
 }
 */
+/*
+function mostrarResultado(){
+  if(document.getElementById('futbol').checked){
+    alert("El deporte que elegiste es futbol")
+  }
+  else if(document.getElementById('basket').checked){
+    alert("El deporte que elegiste es basket")
+  }
+  else if(document.getElementById('tenis').checked){
+    alert("El deporte que elegiste es tenis")
+  }
+}
+*/
+/*
+function vaciar(this){
+  this.value=' ';
+}
+onMouseOut
+function pintar(objeto, col) {
+  objeto.style.backgroundColor = col;
+}
+
+onLoad
+function mostrarMensaje() {
+			alert('Mensaje');
+		}
+*/

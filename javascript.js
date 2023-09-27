@@ -1,4 +1,3 @@
-import Suma from '/xampp/htdocs/EjerciciosGuia/suma.js';
 /*Ej1
   document.write('octavio duarte')
   document.write('<br>')
@@ -199,4 +198,77 @@ function generarAleatorio(){
     window.location='https://www.yahoo.com';
   }
 }
+
+
+function Suma() {
+  this.valor1=0;
+  this.valor2=0;
+  this.cargarvalor1 = cargarvalor1;
+  this.cargarvalor2 = cargarvalor2;
+  this.retornarresultado = retornarresultado;
+}
+
+function cargarvalor1(valor1) {
+  this.valor1 = valor1;
+
+}
+function cargarvalor2(valor2) {
+  this.valor2 = valor2;
+
+}
+
+function retornarresultado(){
+  let resultado = 0;
+  resultado = this.valor1+this.valor2;
+  return resultado;
+}
+
+let s = new Suma();
+s.cargarvalor1(2);
+s.cargarvalor2(3);
+document.write('La suma de los dos valores da como resultado: ' + s.retornarresultado());
+
+#Mayor
+
+function Persona(nombre, edad) {
+  this.nombre = nombre;
+  this.edad = edad;
+  this.mayorEdad = mayorEdad;
+}
+
+function mayorEdad(vector) {
+  let mayor = 0;
+  for (let i = 0; i < 4; i++) {
+    if (vector[i].edad > mayor) {
+      mayor = vector[i].edad;
+    }
+  }
+  return mayor;
+}
+
+let vector = new Array(4);
+vector[0] = new Persona("Juan", 15);
+vector[1] = new Persona("roberto", 35);
+vector[2] = new Persona("Pedro", 10);
+vector[3] = new Persona("Paula", 20);
+let mayor = 0;
+let persona;
+let mayores = 0;
+for (let i = 0; i < 4; i++) {
+  if (vector[i].edad > mayor) {
+    mayor = vector[i].edad;
+    persona = vector[i].nombre;
+    if (vector[i].edad > 18) {
+      mayores = mayores + 1;
+    }
+  }
+}
+document.write(
+  "El mayor de todos es: " +
+    persona +
+    " con una edad de: " +
+    mayor +
+    "<br> </br>"
+);
+document.write("La cantidad de personas mayores es: " + mayores);
  */

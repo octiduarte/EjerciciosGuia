@@ -271,4 +271,29 @@ document.write(
     "<br> </br>"
 );
 document.write("La cantidad de personas mayores es: " + mayores);
+
+#arguments
+function arguments(){
+  let mayor = 0;
+  for(let i=0; i <= arguments.length ; i++){
+    if(arguments[i]>mayor){
+      mayor = arguments[i];
+    }
+  }
+  return mayor;
+}
+
+#funcionAnidada
+function funcion(x1) {
+			function funcionAnidada(x2) {
+				document.write('Valor funcion: ' + x1 + '\n')
+				document.write('Valor funcion Anidadad: ' + x2 + '\n')
+				document.write('Valor variable Local: ' + x3 + '\n')
+			}
+			let x3 = 3
+			funcionAnidada(x1)
+		}
+		funcion(1)
+
+
  */
